@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN IF Constantine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="main-menu" class="layer menu-screen">
+            <h1>VN IF Constantine</h1>
+            <p class="subtitle">Le Débat est une question de vie ou de mort.</p>
+            <button class="btn" onclick="game.showNameScreen()">Nouvelle Partie</button>
+            <button class="btn" onclick="game.showCredits()" style="margin-top: 10px; font-size: 20px;">Crédits</button>
+        </div>
+        <div id="credits-screen" class="layer menu-screen hidden">
+    <h2>Crédits</h2>
+    <p>Scénario & Développement : Melissa Sara Boulsan</p>
+    <p>Art & Personnages : Amir Benchebchoub</p>
+    <p>Inspiré par l'Institut Français de Constantine</p>
+    <button class="btn" onclick="game.hideCredits()">Retour</button>
+</div>
+
+<div id="score-screen" class="layer menu-screen hidden">
+    <h2>Résultats de la Session</h2>
+    <div id="final-stats" style="color: #444; font-size: 24px; text-align: left; margin-bottom: 30px;">
+        </div>
+    <p style="font-style: italic;">"Le débat ne fait que commencer..."</p>
+    <button class="btn" onclick="location.reload()">Retour au Menu</button>
+</div>
+
+        <div id="name-input-screen" class="layer menu-screen hidden">
+            <h2>Fatiha : « Bienvenue à la Débatèque ! C'est quoi ton prénom déjà ? »</h2>
+            <input type="text" id="player-name-input" placeholder="Ton prénom" maxlength="12">
+            <button class="btn" onclick="game.startGame()">Valider</button>
+        </div>
+
+        <div id="game-play" class="layer hidden">
+            <div id="background-layer"></div>
+            
+            <div id="character-layer">
+                <img id="char-img" src="" class="char-img hidden" alt="Personnage">
+            </div>
+
+            <div id="fx-layer" class=""></div>
+
+            <div id="ui-layer">
+                <div id="dialogue-box" onclick="game.nextStep()">
+                    <div id="speaker-name">Nom</div>
+                    <div id="dialogue-text">Texte...</div>
+                    <div id="next-arrow">▼</div>
+                </div>
+
+                <div id="choices-container" class="hidden">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

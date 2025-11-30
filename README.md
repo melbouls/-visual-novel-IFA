@@ -1,4 +1,4 @@
-DOKI DOKI IF CONSTANTINE - README
+VN IF CONSTANTINE - README
 
 1. DESCRIPTION DU PROJET
 
@@ -33,8 +33,7 @@ Ce jeu utilise les technologies web standard.
 
 Ce projet a été réalisé grâce à :
 
-* Le créateur/scénariste : [Votre Nom/Pseudo]
+* Le créateur/scénariste : melbouls
 * Le dessinateur : Amir, pour son talent dans la création des assets visuels.
-* Fatiha : Pour son rôle d'organisatrice.
+* Fatiha : Psq on l'aime bien.
 
-FIN DU DOCUMENT
